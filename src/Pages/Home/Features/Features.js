@@ -34,7 +34,7 @@ const Features = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <div className='grid sm:grid-cols-3 gap-x-8 mt-8'>
+            <div className='grid md:grid-cols-3 gap-x-8 mt-8'>
                 {features.map(feature => <Feature key={feature.id} feature={feature}></Feature>)}
             </div>
         </div>

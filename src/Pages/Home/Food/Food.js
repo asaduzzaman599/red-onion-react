@@ -6,9 +6,9 @@ const Food = ({food}) => {
     return (
         <div className='flex flex-col items-center p-6 gap-4 hover:shadow-2xl rounded'>
             <img src={img} className='w-2/4 mx-auto' alt="" />
-            <h3 className='text-xl font-sm'>{name}</h3>
+            <h3 className='text-xl font-medium'>{name}</h3>
             <p className=''>{description}</p>
-            <p className='text-xl font-mon'>${price}</p>
+            <p className='text-xl font-mono'>${price}</p>
             
         </div>
     );

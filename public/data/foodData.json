@@ -41,7 +41,95 @@
         "price":7.99, 
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     }
+],"breakfast":[
+    {
+        "id":1,
+        "name":"Healthy Meal Plan",
+        "description":"How we dream about out future",
+        "price":23.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":2,
+        "name":"Fried Chicken",
+        "description":"How we dream about out future",
+        "price":9.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":3,
+        "name":"Tarragon-Rubbed-Salmon",
+        "description":"How we dream about out future",
+        "price":6.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":4,
+        "name":"",
+        "description":"How we dream about out future",
+        "price":8.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":5,
+        "name":"Beef Steak",
+        "description":"How we dream about out future",
+        "price":15.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":6,
+        "name":"Honey-Soy-Glazed Salmon with Peppers",
+        "description":"How we dream about out future",
+        "price":7.99, 
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    }
+],"dinner":[
+    {
+        "id":1,
+        "name":"Healthy Meal Plan",
+        "description":"How we dream about out future",
+        "price":23.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":2,
+        "name":"Fried Chicken",
+        "description":"How we dream about out future",
+        "price":9.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":3,
+        "name":"Tarragon-Rubbed-Salmon",
+        "description":"How we dream about out future",
+        "price":6.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":4,
+        "name":"",
+        "description":"How we dream about out future",
+        "price":8.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":5,
+        "name":"Beef Steak",
+        "description":"How we dream about out future",
+        "price":15.99,
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    },
+    {
+        "id":6,
+        "name":"Honey-Soy-Glazed Salmon with Peppers",
+        "description":"How we dream about out future",
+        "price":7.99, 
+        "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
+    }
 ]
+
+
 
 
 }
