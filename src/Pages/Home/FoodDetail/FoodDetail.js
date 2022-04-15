@@ -6,13 +6,13 @@ const FoodDetail = () => {
     const [food, setFood] = useState(null);
     
     useEffect(()=>{
-        fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
+        fetch('https://github.com/asaduzzaman599/red-onion-react/blob/main/public/data/foodData.json')
         .then(res => res.json())
         .then(data => setFood(data[category].find(foodData=> foodData.id=== +foodId)))
            
     },[category,foodId]);
     console.log(food)
-    const {} = food 
+    const {name,description,price} = food || ''
 
 
     return (

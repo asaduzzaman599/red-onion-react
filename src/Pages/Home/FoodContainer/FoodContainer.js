@@ -7,7 +7,7 @@ const FoodContainer = () => {
     const [item, setItems] = useContext(ItemContext)
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
+        fetch('https://github.com/asaduzzaman599/red-onion-react/blob/main/public/data/foodData.json')
             .then(res => res.json())
             .then(data => setFoods(data[item]))
     }, [item])
