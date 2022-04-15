@@ -44,7 +44,7 @@
 ],"breakfast":[
     {
         "id":1,
-        "name":"Healthy Meal Plan",
+        "name":"Healthy Breakfast Plan",
         "description":"How we dream about out future",
         "price":23.99,
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
@@ -87,7 +87,7 @@
 ],"dinner":[
     {
         "id":1,
-        "name":"Healthy Meal Plan",
+        "name":"Healthy dinner Plan",
         "description":"How we dream about out future",
         "price":23.99,
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"

@@ -1,21 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Food from '../Food/Food';
+import { ItemContext } from '../Home';
 
-const FoodContainer = ({item}) => {
-    const [foods,setFoods] = useState([]);
-
+const FoodContainer = () => {
+    const [foods, setFoods] = useState([]);
+    const [item,setItems] = useContext(ItemContext)
+    
     console.log(foods)
-    useEffect(()=>{
+    useEffect(() => {
         fetch('data/foodData.json')
-        .then(res=>res.json())
-        .then(data=>setFoods(data[item]))
-    },[item])
+            .then(res => res.json())
+            .then(data => setFoods(data[item]))
+    }, [item])
     return (
-        <div className='container mx-auto grid sm:grid-cols-3 gap-x-32 gap-y-4 mt-10'>
-            {
-                foods.map(food=><Food key={food.id} food={food}></Food>)
-            }
-        </div>
+        <>
+            <div className='container mx-auto grid sm:grid-cols-3 gap-x-32 gap-y-4 mt-10'>
+                {
+                    foods.map(food => <Food key={food.id} food={food}></Food>)
+                }
+
+            </div>
+            <button className='px-10 py-4 bg-slate-400 rounded text-xl font-medium mt-4 text-white'>Check out your food </button>
+
+        </>
     );
 };
 
