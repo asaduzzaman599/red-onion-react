@@ -12,7 +12,7 @@ const Header = () => {
             </div>
             <div className='sm:flex items-center gap-4'>
                 <Link to='/' className='font-semibold block'>Login</Link>
-                <Link to='/' className='btn-color text-white font-medium rounded-3xl px-4 py-2 block'>Sign Up</Link>
+                <Link to='/' className='P'>Sign Up</Link>
             </div>
         </div>
     );

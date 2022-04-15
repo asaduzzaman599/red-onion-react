@@ -5,15 +5,19 @@ import Features from './Features/Features';
 import FoodContainer from './FoodContainer/FoodContainer';
 import './Home.css'
 import Menu from './Menu/Menu';
-export const ItemContext = createContext() 
+export const ItemContext = createContext()
+export const CartContext = createContext()
 const Home = () => {
-    const [item,setItem] = useState("lunch");
+    const [item, setItem] = useState("lunch");
+    const [cart, setCart] = useState([])
     return (
-       <ItemContext.Provider value={[item,setItem]}>
-        <Banner></Banner>
-        <Menu setItem={setItem}></Menu>
-        <Outlet />
-        <Features></Features>
+        <ItemContext.Provider value={[item, setItem]}>
+            <CartContext.Provider value={[cart, setCart]}>
+                <Banner></Banner>
+                <Menu setItem={setItem}></Menu>
+                <Outlet />
+                <Features></Features>
+            </CartContext.Provider>
         </ItemContext.Provider>
     );
 };
