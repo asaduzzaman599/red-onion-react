@@ -8,10 +8,11 @@ const FoodDetail = () => {
     useEffect(()=>{
         fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
         .then(res => res.json())
-        .then(data => setFood(data[category]?.find(foodItem=>foodItem.id === foodId)))
+        .then(data => setFood(data[category].find(foodData=> foodData.id=== +foodId)))
            
-    },[]);
+    },[category,foodId]);
     console.log(food)
+    const {} = food 
 
 
     return (

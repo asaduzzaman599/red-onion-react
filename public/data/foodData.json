@@ -51,15 +51,15 @@
 "breakfast":[
     {
         "id":1,
-        "name":"Healthy Breakfast Plan",
+        "name":"VBagel cream cheese",
         "description":"How we dream about out future",
-        "price":23.99,
+        "price":6.99,
         "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
         "id":2,
-        "name":"Fried Chicken",
+        "name":"Breakfast sandwich",
         "description":"How we dream about out future",
         "price":9.99,
         "category":"breakfast",
@@ -67,15 +67,15 @@
     },
     {
         "id":3,
-        "name":"Tarragon-Rubbed-Salmon",
+        "name":"Baked Chicken",
         "description":"How we dream about out future",
-        "price":6.99,
+        "price":10.99,
         "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
         "id":4,
-        "name":"",
+        "name":"Eggs Benedict",
         "description":"How we dream about out future",
         "price":8.99,
         "category":"breakfast",
@@ -83,7 +83,7 @@
     },
     {
         "id":5,
-        "name":"Beef Steak",
+        "name":"Toast Croissant Fried egg",
         "description":"How we dream about out future",
         "price":15.99,
         "category":"breakfast",
@@ -91,7 +91,7 @@
     },
     {
         "id":6,
-        "name":"Honey-Soy-Glazed Salmon with Peppers",
+        "name":"Full Breakfast Fried Egg Toast Brunch",
         "description":"How we dream about out future",
         "price":7.99, 
         "category":"breakfast",
