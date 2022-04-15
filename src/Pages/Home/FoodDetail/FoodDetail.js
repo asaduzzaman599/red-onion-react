@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { CartContext } from '../Home';
 
 const FoodDetail = () => {
     const {category,foodId} = useParams()
     const [food, setFood] = useState(null);
     const [cart,setCart] = useContext(CartContext)
-    
+    const navigate = useNavigate()
     useEffect(()=>{
         fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
         .then(res => res.json())
@@ -32,6 +32,8 @@ const FoodDetail = () => {
             food.count = count;
             setCart([...cart,food])
         }
+
+        navigate('/delivarydetails')
         
 
     }

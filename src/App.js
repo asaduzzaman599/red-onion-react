@@ -6,6 +6,9 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import FoodContainer from './Pages/Home/FoodContainer/FoodContainer';
 import FoodDetail from './Pages/Home/FoodDetail/FoodDetail';
+import DelivaryForm from './Pages/Home/DelivaryForm.js/DelivaryForm';
+import Login from './Pages/Home/Auth/Login/Login';
+import Signup from './Pages/Home/Auth/SignUp/Signup';
 
 function App() {
   return (
@@ -15,7 +18,10 @@ function App() {
       <Route path='/' element={<Home></Home>}>
         <Route index element={<FoodContainer></FoodContainer>}></Route>
         <Route path='foods/:category/:foodId' element={<FoodDetail></FoodDetail>}></Route>
+        <Route path='/delivarydetails' element={<DelivaryForm></DelivaryForm>}></Route>
       </Route>
+      <Route path='/login' element={<Login></Login>}></Route>
+      <Route path='/signup' element={<Signup></Signup>}></Route>
     </Routes>
 
      <Footer></Footer>

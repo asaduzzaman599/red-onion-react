@@ -1,0 +1,13 @@
+.input-group input{
+    width: 100%;
+    font-size: 20px;
+    background-color: rgb(242, 241, 241);
+    padding: 6px 14px;
+}
+.input-btn input[type=submit]{
+    background-color: #E51A4B;
+    width: 100%;
+    padding: 8px;
+    color:white;
+    font-weight: 600;
+}
