@@ -1,0 +1,17 @@
+.active{
+    position: relative;
+    color:#E51A4B
+}
+.active::before { 
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    bottom: -4px;
+    margin: auto;
+    background-color: #E51A4B;
+    font-weight: bold;
+  }
