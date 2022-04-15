@@ -8,7 +8,7 @@ import Menu from './Menu/Menu';
 export const ItemContext = createContext()
 export const CartContext = createContext()
 const Home = () => {
-    const [item, setItem] = useState("lunch");
+    const [item, setItem] = useState("");
     const [cart, setCart] = useState([])
     return (
         <ItemContext.Provider value={[item, setItem]}>

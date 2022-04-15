@@ -41,8 +41,11 @@ const FoodDetail = () => {
     console.log(cart)
     
     return (
-        <div className='container mx-auto flex items-center min-h-screen'>
-            <div className='text-left py-10 flex flex-col gap-6 items-start grow'>
+        <div className='container mx-auto flex flex-col md:flex-row items-center min-h-screen p-10'>
+            <div className='grow md:order-2'>
+                <img className='w-4/6 mx-auto ' src={img} alt="" />
+            </div>
+            <div className='text-left py-10 flex flex-col gap-6 items-start grow md:order-1'>
                 <h5 className='text-5xl font-semibold'>{name}</h5>
                 <p>{description}</p>
                 <div className='flex gap-10'>
@@ -55,9 +58,7 @@ const FoodDetail = () => {
                 </div>
                 <button onClick={addToCart} className='btn-color text-white font-medium rounded-3xl px-4 py-2 block'>Add</button>
             </div>
-            <div className='grow '>
-                <img className='w-4/6 mx-auto ' src={img} alt="" />
-            </div>
+            
         </div>
     );
 };
