@@ -4,11 +4,10 @@ import { ItemContext } from '../Home';
 
 const FoodContainer = () => {
     const [foods, setFoods] = useState([]);
-    const [item,setItems] = useContext(ItemContext)
-    
-    console.log(foods)
+    const [item, setItems] = useContext(ItemContext)
+
     useEffect(() => {
-        fetch('data/foodData.json')
+        fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
             .then(res => res.json())
             .then(data => setFoods(data[item]))
     }, [item])

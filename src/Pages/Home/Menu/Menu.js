@@ -13,7 +13,6 @@ const Menu = ({setItem}) => {
     useEffect(()=>{
         setActive({[item]:true})
     },[item])
-    console.log(active)
     const handleMenu = (item)=>{
         setItem(item);
         setActive({[item]:true})
@@ -21,10 +20,10 @@ const Menu = ({setItem}) => {
         navigate('/')
     }
     return (
-            <nav className=' continer mx-auto font-medium py-2 sm:flex justify-center gap-10 '>
-            <button onClick={()=>handleMenu("breakfast")} className={active?.breakfast?'active':''}>Breakfast</button>
-            <button onClick={()=>handleMenu("lunch")} className={active?.lunch?'active':''}>Lunch</button>
-            <button onClick={()=>handleMenu("dinner")} className={active?.dinner?'active':''}>Dinner</button>
+            <nav className=' continer mx-auto py-2 sm:flex justify-center gap-10 '>
+            <button onClick={()=>handleMenu("breakfast")} className={`font-medium ${active?.breakfast?'active':''}`}>Breakfast</button>
+            <button onClick={()=>handleMenu("lunch")} className={`font-medium ${active?.lunch?'active':''}`}>Lunch</button>
+            <button onClick={()=>handleMenu("dinner")} className={`font-medium ${active?.dinner?'active':''}`}>Dinner</button>
         </nav>
     );
 };

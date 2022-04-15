@@ -3,7 +3,6 @@ import React from 'react';
 
 const Feature = ({feature}) => {
     const {img,featureTitle,icon,description} = feature;
-    console.log(img)
     return (
        <div className='w-full' >
            <div className='rounded-3xl hover:shadow-2xl pb-4'>

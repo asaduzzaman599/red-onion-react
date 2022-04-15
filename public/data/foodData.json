@@ -4,6 +4,7 @@
         "name":"Healthy Meal Plan",
         "description":"How we dream about out future",
         "price":23.99,
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -11,6 +12,7 @@
         "name":"Fried Chicken",
         "description":"How we dream about out future",
         "price":9.99,
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -18,6 +20,7 @@
         "name":"Tarragon-Rubbed-Salmon",
         "description":"How we dream about out future",
         "price":6.99,
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -25,6 +28,7 @@
         "name":"",
         "description":"How we dream about out future",
         "price":8.99,
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -32,6 +36,7 @@
         "name":"Beef Steak",
         "description":"How we dream about out future",
         "price":15.99,
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -39,14 +44,17 @@
         "name":"Honey-Soy-Glazed Salmon with Peppers",
         "description":"How we dream about out future",
         "price":7.99, 
+        "category":"lunch",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     }
-],"breakfast":[
+],
+"breakfast":[
     {
         "id":1,
         "name":"Healthy Breakfast Plan",
         "description":"How we dream about out future",
         "price":23.99,
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -54,6 +62,7 @@
         "name":"Fried Chicken",
         "description":"How we dream about out future",
         "price":9.99,
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -61,6 +70,7 @@
         "name":"Tarragon-Rubbed-Salmon",
         "description":"How we dream about out future",
         "price":6.99,
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -68,6 +78,7 @@
         "name":"",
         "description":"How we dream about out future",
         "price":8.99,
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -75,6 +86,7 @@
         "name":"Beef Steak",
         "description":"How we dream about out future",
         "price":15.99,
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -82,14 +94,17 @@
         "name":"Honey-Soy-Glazed Salmon with Peppers",
         "description":"How we dream about out future",
         "price":7.99, 
+        "category":"breakfast",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     }
-],"dinner":[
+],
+"dinner":[
     {
         "id":1,
         "name":"Healthy dinner Plan",
         "description":"How we dream about out future",
         "price":23.99,
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -97,6 +112,7 @@
         "name":"Fried Chicken",
         "description":"How we dream about out future",
         "price":9.99,
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -104,6 +120,7 @@
         "name":"Tarragon-Rubbed-Salmon",
         "description":"How we dream about out future",
         "price":6.99,
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -111,6 +128,7 @@
         "name":"",
         "description":"How we dream about out future",
         "price":8.99,
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -118,6 +136,7 @@
         "name":"Beef Steak",
         "description":"How we dream about out future",
         "price":15.99,
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     },
     {
@@ -125,6 +144,7 @@
         "name":"Honey-Soy-Glazed Salmon with Peppers",
         "description":"How we dream about out future",
         "price":7.99, 
+        "category":"dinner",
         "img":"https://i.ibb.co/GPz0dSq/lunch1.png"
     }
 ]

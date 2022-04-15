@@ -3,13 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { ItemContext } from '../Home';
 
 const Food = ({food}) => {
-    const {id,name,img,description,price}= food;
+    const {id,name,img,description,price,category}= food;
     const navigate = useNavigate()
     const [item,setItems] = useContext(ItemContext)
     const handleFood =()=>{
-        console.log('click',item)
         setItems('')
-        navigate(`foods/${id}`)
+        navigate(`foods/${category}/${id}`)
     }
     return (
         <div onClick={handleFood} className='flex flex-col items-center p-6 gap-4 hover:shadow-2xl rounded'>

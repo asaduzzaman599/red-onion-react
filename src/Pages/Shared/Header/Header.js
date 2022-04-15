@@ -4,7 +4,7 @@ import logo from './../../../images/logo2.png'
 import './Header.css'
 const Header = () => {
     return (
-        <div className='flex justify-between  p-4 items-center'>
+        <div className='flex justify-between h-20 p-4 items-center'>
             <div>
                 <Link to='/'>
                     <img src={logo} className='h-6' alt="" />

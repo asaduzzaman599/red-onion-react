@@ -11,11 +11,10 @@ function App() {
   return (
     <div className="App">
      <Header></Header>
-
     <Routes>
       <Route path='/' element={<Home></Home>}>
         <Route index element={<FoodContainer></FoodContainer>}></Route>
-        <Route path='foods/:foodId' element={<FoodDetail></FoodDetail>}></Route>
+        <Route path='foods/:category/:foodId' element={<FoodDetail></FoodDetail>}></Route>
       </Route>
     </Routes>
 
