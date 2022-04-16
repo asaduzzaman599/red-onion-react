@@ -18,7 +18,7 @@ const FoodContainer = () => {
     
     return (
         <>
-            <div className='container mx-auto grid sm:grid-cols-3 gap-x-32 gap-y-4 mt-10'>
+            <div className='w-4/5 mx-auto grid sm:grid-cols-3 gap-x-32 gap-y-4 mt-10'>
                 {
                     foods?.map(food => <Food key={food.id} food={food}></Food>)
                 }

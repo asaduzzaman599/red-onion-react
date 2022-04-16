@@ -4,7 +4,7 @@ import { auth } from '../../../../firebase.init';
 import logo from './../../../../images/logo2.png'
 import './../Form.css'
 import { useAuthState, useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import image1 from './../../../../images/icons/Group 743.png'
 import image2 from './../../../../images/icons/Group 287.png'
 import image3 from './../../../../images/icons/Group 747.png'
@@ -139,7 +139,7 @@ const Signup = () => {
                 <h3 className='text-2xl font-bold'>Sign up</h3>
                 <img src={logo} className="h-16 inline-block  " alt="" />
 
-                <form onSubmit={handleForm} className='flex flex-col gap-10 md:p-8  w-full'>
+                <form onSubmit={handleForm} className='flex flex-col gap-10 md:px-8 pt-4 w-full'>
                     <div className="input-group">
                         <input type="text" className=' w-full' name="username" id="" placeholder='Name' onChange={handleName} />
                         {error?.nameError && <p className='text-red-500 text-left'>{error?.nameError}</p>}
@@ -159,6 +159,8 @@ const Signup = () => {
                     <div className="input-btn ">
                         <input type="submit" className='' value='Sign in' />
                     </div>
+                
+                    <Link to='/login' className='text-[#E51A4B] font-medium'>Already have account?</Link>
 
                 </form>
             </div>

@@ -29,7 +29,7 @@ const Features = () => {
     ]
     
     return (
-        <div className='text-left container mt-6 mx-auto mb-5'>
+        <div className='text-left container mt-6 mx-auto mb-5 p-4'>
             <h4 className=' text-4xl font-mono mb-4'>Why you choose us</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

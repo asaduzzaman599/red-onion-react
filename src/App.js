@@ -6,10 +6,10 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import FoodContainer from './Pages/Home/FoodContainer/FoodContainer';
 import FoodDetail from './Pages/Home/FoodDetail/FoodDetail';
-import DelivaryForm from './Pages/Home/DelivaryForm.js/DelivaryForm';
 import Login from './Pages/Home/Auth/Login/Login';
 import Signup from './Pages/Home/Auth/SignUp/Signup';
 import RequireAuth from './Pages/Home/Auth/RequireAuth/RequireAuth';
+import DelivaryForm from './Pages/Home/DelivaryForm/DelivaryForm';
 
 function App() {
   return (

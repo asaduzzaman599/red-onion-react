@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { auth } from '../../../../firebase.init';
 import logo from './../../../../images/logo2.png'
 
@@ -74,7 +74,7 @@ const Login = () => {
             <h3 className='text-2xl font-bold'>Log in</h3>
             <img src={logo} className="h-16 inline-block "  alt="" />
 
-            <form onSubmit={handleForm} className='flex flex-col gap-10 md:p-8  w-full'>
+            <form onSubmit={handleForm} className='flex flex-col gap-10 md:px-8 pt-4 w-full'>
                 
                 <div className="input-group">
                     <input type="email" onChange={handleEmail} name="" id="" placeholder='Email' required/>
@@ -88,6 +88,8 @@ const Login = () => {
                 </div>
 
             </form>
+            
+            <Link to='/signup' className='text-[#E51A4B] font-medium'>Don't have account?</Link>
             </div>
         </div>
     );

@@ -6,15 +6,15 @@ const Footer = () => {
     const customerServices = ['Get Help', "Raad FAQ", "View all cites", "Resturents near me"]
     const year = (new Date()).getFullYear()
     return (
-        <footer className='bg-stone-900  py-14 '>
-            <div className='container mx-auto text-left'>
+        <footer className='bg-stone-900  py-14 p-6'>
+            <div className='container mx-auto md:text-left '>
                 <div className='  md:grid md:grid-cols-5 w-full'>
                     <div className='md:col-span-3  '>
                         <Link to="/">
                             <img src={logo} className="h-10 mx-auto md:mx-0" alt="" />
                         </Link>
                     </div>
-                    <div className=''>
+                    <div className='mt-4'>
                         <ul cl>
                             {
                                 options.map((option, index) => <li key={index}><Link className='text-gray-100' to='/'>{option}</Link></li>)
