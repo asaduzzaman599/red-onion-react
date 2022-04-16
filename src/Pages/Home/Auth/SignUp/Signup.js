@@ -1,5 +1,5 @@
 import { async } from '@firebase/util';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { auth } from '../../../../firebase.init';
 import logo from './../../../../images/logo2.png'
 import './../Form.css'
@@ -11,6 +11,7 @@ import image3 from './../../../../images/icons/Group 747.png'
 import image4 from './../../../../images/icons/Group 761.png'
 import image5 from './../../../../images/icons/Group 767.png'
 import image6 from './../../../../images/icons/Group 765.png'
+import { toast } from 'react-toastify';
 
 const Signup = () => {
 
@@ -20,6 +21,7 @@ const Signup = () => {
 
     const [
         createUserWithEmailAndPassword,
+        u,
         loading,
         hookError,
     ] = useCreateUserWithEmailAndPassword(auth);
@@ -27,32 +29,31 @@ const Signup = () => {
     const [user] = useAuthState(auth)
 
     if (user) {
+        toast.success('User created Successfully')
         navigate('/')
     }
 
+   useEffect(()=>{
     if (hookError) {
-        switch (hookError) {
-            case '':
-                // code block
-                break;
-            case '':
-                // code block
+        switch (hookError.message) {
+            case 'Firebase: Error (auth/email-already-in-use).':
+                toast.error('Email already exist')
                 break;
             default:
-            // code block
+                toast.error('Something went wrong')
+                break;
         }
     }
+   },[hookError])
 
     const handleName = (event) => {
         const value = event.target.value;
         if (value) {
             setUserInfo({ ...userInfo, name: value })
             setError({ ...error, nameError: '' })
-            console.log(value)
         } else {
 
             setError({ ...error, nameError: 'Name is empty' })
-            console.log('error')
         }
     }
 
@@ -64,7 +65,7 @@ const Signup = () => {
         } else {
 
             setError({ ...error, emailError: 'invalied email' })
-            console.log('error')
+    
         }
     }
 
@@ -77,7 +78,6 @@ const Signup = () => {
         } else {
 
             setError({ ...error, passwordError: 'Minimum 8 length password' })
-            console.log('error')
         }
     }
 
@@ -90,7 +90,7 @@ const Signup = () => {
         } else {
 
             setError({ ...error, confirmPasswordError: 'Not Match' })
-            console.log('error')
+           
         }
 
     }

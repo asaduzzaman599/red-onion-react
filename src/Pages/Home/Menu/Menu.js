@@ -20,7 +20,7 @@ const Menu = ({setItem}) => {
         navigate('/')
     }
     return (
-            <nav className=' continer mx-auto py-2 sm:flex justify-center gap-10 '>
+            <nav className=' continer mx-auto py-2 flex justify-center gap-4 sm:gap-10 '>
             <button onClick={()=>handleMenu("breakfast")} className={`font-medium ${active?.breakfast?'active':''}`}>Breakfast</button>
             <button onClick={()=>handleMenu("lunch")} className={`font-medium ${active?.lunch?'active':''}`}>Lunch</button>
             <button onClick={()=>handleMenu("dinner")} className={`font-medium ${active?.dinner?'active':''}`}>Dinner</button>

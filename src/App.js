@@ -10,11 +10,14 @@ import Login from './Pages/Home/Auth/Login/Login';
 import Signup from './Pages/Home/Auth/SignUp/Signup';
 import RequireAuth from './Pages/Home/Auth/RequireAuth/RequireAuth';
 import DelivaryForm from './Pages/Home/DelivaryForm/DelivaryForm';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <div className="App">
      <Header></Header>
+     <ToastContainer />
     <Routes>
       <Route path='/' element={<Home></Home>}>
         <Route index element={<FoodContainer></FoodContainer>}></Route>

@@ -13,7 +13,7 @@ const FoodDetail = () => {
         .then(data => setFood(data[category].find(foodData=> foodData.id=== +foodId)))
            
     },[category,foodId]);
-    console.log(food)
+
     const {name,description,price,img} = food || ''
 
     const [count,setCount] = useState(0)
@@ -38,7 +38,6 @@ const FoodDetail = () => {
 
     }
 
-    console.log(cart)
     
     return (
         <div className='container mx-auto flex flex-col md:flex-row items-center min-h-screen p-10'>

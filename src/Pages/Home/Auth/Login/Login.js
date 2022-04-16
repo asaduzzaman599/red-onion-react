@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { auth } from '../../../../firebase.init';
 import logo from './../../../../images/logo2.png'
 
@@ -17,25 +18,26 @@ const Login = () => {
         hookError,
       ] = useSignInWithEmailAndPassword(auth);
 
-      console.log(location)
       let from = location?.state?.from?.pathname||'/';
 
+      
       if(user){
         navigate(from , {replace:true})
       }
 
-      if(hookError){
-        switch(hookError) {
-            case '':
-              // code block
-              break;
-            case '':
-              // code block
-              break;
-            default:
-              // code block
-          }
-      }
+     useEffect(()=>{
+        if(hookError){
+          switch(hookError.message) {
+              case 'Firebase: Error (auth/user-not-found).':
+                toast.error('User not found')
+                break;
+              
+              default:
+                
+                  toast.error('Something went wrong')
+            }
+        }
+     },[hookError])
 
     
 

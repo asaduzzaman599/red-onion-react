@@ -9,7 +9,7 @@ const DelivaryForm = () => {
     const handleForm = (event) => {
         event.preventDefault()
     }
-    console.log(cart.length )
+
     useEffect(()=>{
         if(cart.length < 1){
             navigate('/')

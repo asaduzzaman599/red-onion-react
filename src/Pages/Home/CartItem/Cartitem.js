@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Cartitem = ({cartItem}) => {
     const {img,name,price,count:cartCount} = cartItem
     const [count,setCount]=useState(cartCount)
-    console.log(cartItem)
+   
     return (
         <div className='flex items-center justify-between bg-[#f2f1f1] p-2 px-4 my-2 border'>
             <div className='flex items-center gap-8'>

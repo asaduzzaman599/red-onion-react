@@ -14,7 +14,7 @@ const Footer = () => {
                             <img src={logo} className="h-10 mx-auto md:mx-0" alt="" />
                         </Link>
                     </div>
-                    <div className='mt-4'>
+                    <div className='mt-4 md:mt-0'>
                         <ul cl>
                             {
                                 options.map((option, index) => <li key={index}><Link className='text-gray-100' to='/'>{option}</Link></li>)
