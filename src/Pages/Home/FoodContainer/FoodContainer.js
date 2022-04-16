@@ -8,11 +8,12 @@ const FoodContainer = () => {
     const [item, setItems] = useContext(ItemContext)
     const location = useLocation()
     let fooditem = item;
-   
+    useEffect(()=>{
         if(!item){
-            setItems('lunch')
-            
-        }
+        setItems('lunch')
+        
+    }
+    },[item])
     const [foods, setFoods] = useFoods(fooditem);
     
     return (

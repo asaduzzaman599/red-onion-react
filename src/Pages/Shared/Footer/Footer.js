@@ -6,7 +6,7 @@ const Footer = () => {
     const customerServices = ['Get Help', "Raad FAQ", "View all cites", "Resturents near me"]
     const year = (new Date()).getFullYear()
     return (
-        <footer className='bg-stone-900  py-14 mt-5'>
+        <footer className='bg-stone-900  py-14 '>
             <div className='container mx-auto text-left'>
                 <div className='  md:grid md:grid-cols-5 w-full'>
                     <div className='md:col-span-3  '>

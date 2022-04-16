@@ -11,3 +11,39 @@
     color:white;
     font-weight: 600;
 }
+.animation-icon{
+    z-index: 1;
+    position: absolute;
+  animation: mymove 5s infinite alternate ease-in-out;
+  animation-delay: 2s;
+}
+
+@keyframes mymove {
+    0%{
+        transform: rotate(15deg);
+    }20%{
+        
+        transform: rotate(-15deg);
+    }40%{
+        transform: rotate(25deg);
+    }60%{
+        
+        transform: rotate(-15deg);
+    }80%{
+        
+        transform: rotate(10deg);
+    }100%{
+        
+        transform: rotate(15deg);
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .input-group input{
+        width: 100%;
+        font-size: 20px;
+        background-color: rgb(242, 241, 241);
+        padding: 6px 14px;
+    }
+      
+  }
