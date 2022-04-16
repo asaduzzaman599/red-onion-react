@@ -2,7 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Live Site
+https://red-onion-8214e.web.app
 
 In the project directory, you can run:
 
