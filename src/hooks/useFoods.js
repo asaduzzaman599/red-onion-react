@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 
-const useFoods = (item)=>{
-    const [foods,setFoods] = useState([]);
+const useFoods = (item) => {
+    const [foods, setFoods] = useState([]);
     useEffect(() => {
-        
-        fetch('https://raw.githubusercontent.com/asaduzzaman599/red-onion-react/main/public/data/foodData.json')
+        const url = `http://localhost:4000/foods/${item}`
+        fetch(url)
             .then(res => res.json())
             .then(data => {
-                setFoods(data[item])
+                setFoods(data)
             })
-            
+
     }, [item])
 
 
-    return [foods,setFoods]
+    return [foods, setFoods]
 
 }
 
