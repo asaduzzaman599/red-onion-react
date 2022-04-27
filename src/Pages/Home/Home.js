@@ -7,13 +7,13 @@ import './Home.css'
 import Menu from './Menu/Menu';
 export const ItemContext = createContext()
 export const CartContext = createContext()
-const Home = () => {
+const Home = ({ searchFood }) => {
     const [item, setItem] = useState("");
     const [cart, setCart] = useState([])
     return (
         <ItemContext.Provider value={[item, setItem]}>
             <CartContext.Provider value={[cart, setCart]}>
-                <Banner></Banner>
+                <Banner searchFood={searchFood}></Banner>
                 <Menu setItem={setItem}></Menu>
                 <Outlet />
                 <Features></Features>

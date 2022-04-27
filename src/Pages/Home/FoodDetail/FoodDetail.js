@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { CartContext } from '../Home';
 
 const FoodDetail = () => {
@@ -8,7 +9,7 @@ const FoodDetail = () => {
     const [cart, setCart] = useContext(CartContext)
     const navigate = useNavigate()
     useEffect(() => {
-        const url = `http://localhost:4000/food?type=${category}&id=${foodId}`
+        const url = `https://red-onion-asaduzzaman599.herokuapp.com/food?type=${category}&id=${foodId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setFood(data))
@@ -21,6 +22,7 @@ const FoodDetail = () => {
 
     const addToCart = () => {
         if (count < 1) {
+            toast("Quantity 0")
             return
         }
         const exist = cart.find(cartFood => cartFood.category === food.category && cartFood._id === food._id)

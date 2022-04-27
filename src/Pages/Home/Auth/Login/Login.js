@@ -11,7 +11,7 @@ const Login = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const [userInfo, setUserInfo] = useState({ email: "", password: "" })
-
+    const [token, setToken] = useState('')
     const [
         signInWithEmailAndPassword,
         user,
@@ -22,9 +22,11 @@ const Login = () => {
     let from = location?.state?.from?.pathname || '/';
 
 
-    if (user) {
-        // navigate(from, { replace: true })
-    }
+    useEffect(() => {
+        if (token) {
+            navigate(from, { replace: true })
+        }
+    }, [token])
 
     useEffect(() => {
         if (hookError) {
@@ -69,10 +71,13 @@ const Login = () => {
         if (email && password) {
             const signIn = async () => {
                 await signInWithEmailAndPassword(email, password)
-                console.log(user.user)
-                const { data } = await axios.post('http://localhost:4000/login', { email: user?.user?.email })
-                console.log(data)
-                localStorage.setItem('accessToken', data)
+
+                await axios.post('https://red-onion-asaduzzaman599.herokuapp.com/login', { email: user?.user?.email }).then(({ data }) => {
+                    localStorage.setItem('accessToken', data)
+                    setToken(data)
+                })
+                // 
+
             }
             signIn()
         }
